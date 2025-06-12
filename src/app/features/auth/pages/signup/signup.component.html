@@ -1,0 +1,52 @@
+    
+<h1 class="text-2xl font-bold text-gray-800">
+  Criar conta
+</h1>
+<p class="text-sm text-gray-600 mt-1">
+  Preencha os dados abaixo para criar sua conta.
+</p>
+
+<app-button-google class="mt-6 block"></app-button-google>
+
+<div class="flex items-center justify-center gap-2 mt-7 mb-8">
+  <div class="h-px w-full bg-gray-300"></div>
+  <p class="shrink-0 text-sm text-gray-600">Ou registre com seu e-mail</p>
+  <div class="h-px w-full bg-gray-300"></div>
+</div>
+
+<form class="flex flex-col gap-4">
+  <app-field-wrapper>
+    <app-label>Nome</app-label>
+    <input customInput appInput type="text" id="name" name="name" placeholder="Nome completo" autocomplete="off" />
+  </app-field-wrapper>
+
+  <app-field-wrapper>
+    <app-label>Email</app-label>
+    <input customInput appInput type="email" id="email" name="email" placeholder="Email" autocomplete="off" />
+  </app-field-wrapper>
+
+    <app-field-wrapper>
+    <app-label>Telefone</app-label>
+    <input customInput appInput type="phone" id="phone" name="phone" placeholder="phone" autocomplete="off" />
+  </app-field-wrapper>
+
+  <app-field-wrapper>
+    <app-label>Senha</app-label>
+    <input customInput appInput type="password" id="password" name="password" placeholder="Crie uma senha" autocomplete="off" />
+  </app-field-wrapper>
+
+  <app-field-wrapper>
+    <app-label>Confirmar senha</app-label>
+    <input customInput appInput type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" autocomplete="off" />
+  </app-field-wrapper>
+
+  <button customButton appButton class="mt-4" type="button">
+    Registrar
+  </button>
+</form>
+
+<p class="text-sm text-center mt-10">
+  Já possui conta?
+  <a class="font-bold text-blue-600 hover:underline" routerLink="../signin">Entrar</a>
+</p>
+

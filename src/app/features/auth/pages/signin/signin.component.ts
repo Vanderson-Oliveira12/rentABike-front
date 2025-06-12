@@ -5,6 +5,7 @@ import { InputComponent } from "../../../../shared/components/forms/input/input.
 import { FieldWrapperComponent } from "../../../../shared/components/forms/field-wrapper/field-wrapper.component";
 import { LabelComponent } from "../../../../shared/components/forms/label/label.component";
 import { ButtonComponent } from "../../../../shared/components/button/button.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -15,7 +16,8 @@ import { ButtonComponent } from "../../../../shared/components/button/button.com
     InputComponent,
     FieldWrapperComponent,
     LabelComponent,
-    ButtonComponent
+    ButtonComponent,
+    RouterLink
 ],
   templateUrl: './signin.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
