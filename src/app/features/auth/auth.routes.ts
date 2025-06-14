@@ -16,8 +16,4 @@ export const AUTH_ROUTES: Route[] = [
         path: "signup",
         loadComponent: () => import("./pages/signup/signup.component.js").then(x => x.SignupComponent)
     },
-    {
-        path: "**",
-        redirectTo: "signin"
-    }
 ]

@@ -1,0 +1,9 @@
+ <div class="h-dvh grid grid-rows-[57px_1fr] ">
+     <app-nav></app-nav>
+     <div class="grid h-[calc(100dvh-57px)] relative transition-all duration-300 ease-in" [ngClass]="menuClass()">
+         <app-aside [menus]="menus()"></app-aside>
+        <div class="overflow-auto">
+            <router-outlet></router-outlet>
+        </div>
+     </div>
+ </div>

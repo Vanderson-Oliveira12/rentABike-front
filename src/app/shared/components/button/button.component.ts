@@ -6,7 +6,7 @@ type TButtonVariant =
   | 'disabled';
 
 @Component({
-  selector: 'button[customButton]',
+  selector: 'button[customButton], a[customButton]',
   imports: [],
   template: "<ng-content></ng-content>",
   standalone: true,

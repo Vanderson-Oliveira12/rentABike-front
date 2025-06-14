@@ -1,0 +1,12 @@
+<nav class=" flex items-center justify-between px-3 py-2 border-b border-gray-300">
+   <ng-container [ngTemplateOutlet]="menuBurguer"></ng-container>
+    <!-- <img class="w-8 h-8" src="assets/img/homem-andando-de-bicicleta.png" alt="Logo"> -->
+    <img class="w-10 h-10 object-cover object-center rounded-full" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Usuário">
+</nav>
+
+
+<ng-template #menuBurguer>
+    <button type="button" class="cursor-pointer p-1" (click)="onToggle()">
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+    </button>
+</ng-template>
